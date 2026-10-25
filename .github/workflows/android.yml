@@ -21,8 +21,19 @@ jobs:
           distribution: temurin
           java-version: '17'
 
+      # 显式列出需要的包。默认参数会去装 `tools`，而新版 cmdline-tools 已经不再提供它，
+      # 会失败在 "Warning: Failed to find package 'tools'"。
       - name: Set up Android SDK
         uses: android-actions/setup-android@v3
+        with:
+          packages: 'platform-tools platforms;android-34 build-tools;34.0.0'
+          log-accepted-android-sdk-licenses: false
+
+      - name: Show SDK state
+        run: |
+          echo "ANDROID_HOME=$ANDROID_HOME"
+          ls "$ANDROID_HOME/platforms"
+          ls "$ANDROID_HOME/build-tools"
 
       - name: Build debug APK
         run: |
