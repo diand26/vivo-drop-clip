@@ -1,5 +1,9 @@
 # vivo 超级拖放 → 剪贴板（DropClip）
 
+[![build](https://github.com/diand26/vivo-drop-clip/actions/workflows/android.yml/badge.svg)](https://github.com/diand26/vivo-drop-clip/actions/workflows/android.yml)
+[![license: GPL-3.0](https://img.shields.io/badge/license-GPL--3.0-blue.svg)](LICENSE)
+[![minSdk 24](https://img.shields.io/badge/minSdk-24-3DDC84.svg)](https://developer.android.com/about/versions/nougat)
+
 把别的应用里的**文字 / 图片 / 文件**拖进来，松手就写入系统剪贴板 —— 一个给「超级拖放」准备的落点。
 
 面向 vivo OriginOS 的「超级拖放」，同样适用于华为 / 小米 / 三星的同类功能，以及 AOSP 原生拖放（`DragEvent` + `ClipData`）。
