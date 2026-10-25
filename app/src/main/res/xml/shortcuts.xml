@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  静态快捷方式。注册之后：
+  1. 桌面长按图标的菜单里出现这几项；
+  2. vivo 控制中心「自定义 → 应用快捷功能」把本应用列出来，可以把下面这几项长按拖到上方，
+     变成控制中心里的磁贴（点击直接启动，是否以小组件/小窗形式打开由系统决定，
+     App 自己无法强制小窗 —— Android 没有这个公开 API）。
+  data 里的 scheme 用来区分要做什么：dropclip://pip 表示启动后立刻进画中画小窗。
+-->
+<shortcuts xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <shortcut
+        android:enabled="true"
+        android:icon="@drawable/ic_launcher"
+        android:shortcutId="drop"
+        android:shortcutLongLabel="@string/shortcut_drop_long"
+        android:shortcutShortLabel="@string/shortcut_drop_short">
+        <intent
+            android:action="android.intent.action.MAIN"
+            android:targetClass="com.example.dropclip.MainActivity"
+            android:targetPackage="com.example.dropclip" />
+    </shortcut>
+
+    <shortcut
+        android:enabled="true"
+        android:icon="@drawable/ic_launcher"
+        android:shortcutId="pip"
+        android:shortcutLongLabel="@string/shortcut_pip_long"
+        android:shortcutShortLabel="@string/shortcut_pip_short">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:data="dropclip://pip"
+            android:targetClass="com.example.dropclip.MainActivity"
+            android:targetPackage="com.example.dropclip" />
+    </shortcut>
+
+    <shortcut
+        android:enabled="true"
+        android:icon="@drawable/ic_launcher"
+        android:shortcutId="history"
+        android:shortcutLongLabel="@string/shortcut_history_long"
+        android:shortcutShortLabel="@string/shortcut_history_short">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:data="dropclip://history"
+            android:targetClass="com.example.dropclip.MainActivity"
+            android:targetPackage="com.example.dropclip" />
+    </shortcut>
+
+</shortcuts>

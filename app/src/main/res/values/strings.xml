@@ -1,0 +1,50 @@
+<resources>
+    <string name="app_name">拖放剪贴板</string>
+
+    <string name="title">拖放即复制</string>
+    <string name="subtitle">长按其他应用里的文字或图片，拖进下面的框，松手就写入剪贴板。建议先把本应用分屏或开成小窗，否则目标区域会被盖住。</string>
+
+    <string name="drop_hint_idle">把文字 / 图片拖到这里</string>
+    <string name="drop_hint_release">松手写入剪贴板</string>
+
+    <string name="btn_read_clip">看一下当前剪贴板</string>
+    <string name="btn_history">粘贴历史</string>
+    <string name="btn_history_count">粘贴历史 %1$d</string>
+    <string name="btn_clear_history">清空</string>
+    <string name="history_empty">还没有记录。复制一段文字，或者往上面的框里拖点东西，就会出现在这里。</string>
+    <string name="auto_back_label">复制后自动退到后台（把画面让给源应用）</string>
+
+    <string name="history_item_meta">%1$s · %2$d 字</string>
+    <string name="history_item_image">图片 · %1$s</string>
+
+    <string name="status_restored_text">已重新复制这条文字</string>
+    <string name="status_restored_image">已重新复制这张图片</string>
+    <string name="status_history_cleared">历史已清空</string>
+    <string name="status_image_gone">这张图已经不在缓存里了（缓存只留最近 30 个文件）</string>
+    <string name="status_autoback">已复制，稍后自动退回后台</string>
+
+    <string name="shortcut_drop_short">拖放剪贴板</string>
+    <string name="shortcut_drop_long">打开拖放剪贴板，把文字 / 图片拖进来</string>
+    <string name="shortcut_pip_short">小窗拖放</string>
+    <string name="shortcut_pip_long">直接开成悬浮小窗，方便从别的应用拖东西进来</string>
+    <string name="shortcut_history_short">粘贴历史</string>
+    <string name="shortcut_history_long">打开粘贴历史，点一条就回到剪贴板</string>
+
+    <string name="status_pip_on">已进入小窗：现在可以长按其他应用里的内容拖进来</string>
+    <string name="status_pip_failed">这台设备没能开成小窗（系统不支持画中画，或被系统策略拦了）</string>
+
+    <string name="status_idle">等待拖入…</string>
+    <string name="status_empty">没有拿到拖拽数据</string>
+    <string name="status_unsupported">这次拖过来的内容暂时不支持，试试纯文字或图片</string>
+    <string name="status_denied">读不到来源数据：拖拽方没有授予读取权限（纯文字拖放不受影响）</string>
+    <string name="status_copied_text">已复制文字，共 %1$d 个字符</string>
+    <string name="status_copied_image">已复制图片到剪贴板</string>
+    <string name="status_copied_file">已复制文件：%1$s</string>
+    <string name="status_clip_empty">剪贴板现在是空的</string>
+    <string name="status_clip_text">剪贴板文字：%1$s</string>
+    <string name="status_clip_image">剪贴板里是一张图片</string>
+
+    <string name="clip_label_text">拖放的文字</string>
+    <string name="clip_label_image">拖放的图片</string>
+    <string name="clip_label_file">拖放的文件</string>
+</resources>
